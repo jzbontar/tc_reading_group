@@ -31,8 +31,8 @@ def save_disp(vol, fname, max_disp):
 x0 = load_image('data/imL.png')
 x1 = load_image('data/imR.png')
 
-# ad_vol = tc_ad_vol(x0, x1)
-# save_disp(ad_vol, 'ad.png', 16)
+ad_vol = tc_ad_vol(x0, x1)
+save_disp(ad_vol, 'ad.png', 16)
 
 x0c = tc_census_transform(x0)
 x1c = tc_census_transform(x1)
